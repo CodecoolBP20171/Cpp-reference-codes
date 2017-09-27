@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="cipher" targetName="gtest_main" />
+      <config projectName="cipher" targetName="gmock" />
+      <config projectName="cipher" targetName="cipher" />
+      <config projectName="cipher" targetName="gtest" />
+      <config projectName="cipher" targetName="gmock_main" />
+      <config projectName="cipher" targetName="runUnitTests" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="937ca3d1-757c-492c-99b9-84f80b318cc9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/testable.iml" afterPath="$PROJECT_DIR$/.idea/testable.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/decipher.cpp" afterPath="$PROJECT_DIR$/src/decipher.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/decipher.h" afterPath="$PROJECT_DIR$/src/decipher.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/CMakeLists.txt" afterPath="$PROJECT_DIR$/test/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/.gitignore" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/.travis.yml" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/CMakeLists.txt" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/README.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/appveyor.yml" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/appveyor.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/CHANGES" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/CHANGES" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/CMakeLists.txt" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/CONTRIBUTORS" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/CONTRIBUTORS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/LICENSE" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/Makefile.am" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/Makefile.am" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/README.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/configure.ac" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/configure.ac" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/CheatSheet.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/CheatSheet.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/CookBook.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/CookBook.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/DesignDoc.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/DesignDoc.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/DevGuide.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/DevGuide.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/Documentation.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/Documentation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/ForDummies.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/ForDummies.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/FrequentlyAskedQuestions.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/FrequentlyAskedQuestions.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/KnownIssues.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/KnownIssues.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_5/CheatSheet.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_5/CheatSheet.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_5/CookBook.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_5/CookBook.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_5/Documentation.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_5/Documentation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_5/ForDummies.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_5/ForDummies.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_5/FrequentlyAskedQuestions.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_5/FrequentlyAskedQuestions.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_6/CheatSheet.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_6/CheatSheet.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_6/CookBook.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_6/CookBook.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_6/Documentation.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_6/Documentation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_6/ForDummies.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_6/ForDummies.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_6/FrequentlyAskedQuestions.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_6/FrequentlyAskedQuestions.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_7/CheatSheet.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_7/CheatSheet.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_7/CookBook.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_7/CookBook.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_7/Documentation.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_7/Documentation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_7/ForDummies.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_7/ForDummies.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_7/FrequentlyAskedQuestions.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/docs/v1_7/FrequentlyAskedQuestions.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-actions.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-actions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-cardinalities.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-cardinalities.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-actions.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-actions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-actions.h.pump" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-actions.h.pump" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-function-mockers.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-function-mockers.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-function-mockers.h.pump" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-function-mockers.h.pump" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-matchers.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-matchers.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-matchers.h.pump" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-matchers.h.pump" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-nice-strict.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-nice-strict.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-nice-strict.h.pump" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-generated-nice-strict.h.pump" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-matchers.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-matchers.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-more-actions.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-more-actions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-more-matchers.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-more-matchers.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-spec-builders.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock-spec-builders.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/gmock.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/custom/gmock-generated-actions.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/custom/gmock-generated-actions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/custom/gmock-generated-actions.h.pump" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/custom/gmock-generated-actions.h.pump" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/custom/gmock-matchers.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/custom/gmock-matchers.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/custom/gmock-port.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/custom/gmock-port.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/gmock-generated-internal-utils.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/gmock-generated-internal-utils.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/gmock-generated-internal-utils.h.pump" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/gmock-generated-internal-utils.h.pump" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/gmock-internal-utils.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/gmock-internal-utils.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/gmock-port.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/include/gmock/internal/gmock-port.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/make/Makefile" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/make/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/msvc/2015/gmock.sln" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/msvc/2015/gmock.sln" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/msvc/2015/gmock.vcxproj" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/msvc/2015/gmock.vcxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/msvc/2015/gmock_config.props" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/msvc/2015/gmock_config.props" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/msvc/2015/gmock_main.vcxproj" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/msvc/2015/gmock_main.vcxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/msvc/2015/gmock_test.vcxproj" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/msvc/2015/gmock_test.vcxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/fuse_gmock_files.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/fuse_gmock_files.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/LICENSE" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/README" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/README.cppclean" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/README.cppclean" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/cpp/ast.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/cpp/ast.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/cpp/gmock_class.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/cpp/gmock_class.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/cpp/gmock_class_test.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/cpp/gmock_class_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/cpp/keywords.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/cpp/keywords.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/cpp/tokenize.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/cpp/tokenize.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/cpp/utils.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/cpp/utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/gmock_gen.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/generator/gmock_gen.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/gmock-config.in" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/gmock-config.in" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/gmock_doctor.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/gmock_doctor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/upload.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/upload.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/upload_gmock.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/scripts/upload_gmock.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/src/gmock-all.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/src/gmock-all.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/src/gmock-cardinalities.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/src/gmock-cardinalities.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/src/gmock-internal-utils.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/src/gmock-internal-utils.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/src/gmock-matchers.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/src/gmock-matchers.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/src/gmock-spec-builders.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/src/gmock-spec-builders.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/src/gmock.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/src/gmock.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/src/gmock_main.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/src/gmock_main.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-actions_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-actions_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-cardinalities_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-cardinalities_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-generated-actions_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-generated-actions_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-generated-function-mockers_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-generated-function-mockers_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-generated-internal-utils_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-generated-internal-utils_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-generated-matchers_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-generated-matchers_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-internal-utils_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-internal-utils_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-matchers_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-matchers_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-more-actions_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-more-actions_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-nice-strict_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-nice-strict_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-port_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-port_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-spec-builders_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock-spec-builders_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_all_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_all_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_ex_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_ex_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_leak_test.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_leak_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_leak_test_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_leak_test_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_link2_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_link2_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_link_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_link_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_link_test.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_link_test.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_output_test.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_output_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_output_test_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_output_test_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_output_test_golden.txt" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_output_test_golden.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_stress_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_stress_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_test_utils.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googlemock/test/gmock_test_utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/.gitignore" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/CHANGES" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/CHANGES" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/CMakeLists.txt" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/CONTRIBUTORS" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/CONTRIBUTORS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/LICENSE" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/Makefile.am" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/Makefile.am" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/README.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/cmake/internal_utils.cmake" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/cmake/internal_utils.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/configure.ac" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/configure.ac" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/AdvancedGuide.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/AdvancedGuide.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/DevGuide.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/DevGuide.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/Documentation.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/Documentation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/FAQ.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/FAQ.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/Primer.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/Primer.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/PumpManual.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/PumpManual.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/Samples.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/Samples.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_5_AdvancedGuide.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_5_AdvancedGuide.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_5_Documentation.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_5_Documentation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_5_FAQ.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_5_FAQ.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_5_Primer.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_5_Primer.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_5_PumpManual.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_5_PumpManual.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_5_XcodeGuide.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_5_XcodeGuide.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_6_AdvancedGuide.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_6_AdvancedGuide.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_6_Documentation.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_6_Documentation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_6_FAQ.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_6_FAQ.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_6_Primer.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_6_Primer.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_6_PumpManual.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_6_PumpManual.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_6_Samples.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_6_Samples.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_6_XcodeGuide.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_6_XcodeGuide.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_7_AdvancedGuide.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_7_AdvancedGuide.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_7_Documentation.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_7_Documentation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_7_FAQ.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_7_FAQ.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_7_Primer.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_7_Primer.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_7_PumpManual.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_7_PumpManual.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_7_Samples.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_7_Samples.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_7_XcodeGuide.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/V1_7_XcodeGuide.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/XcodeGuide.md" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/docs/XcodeGuide.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-death-test.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-death-test.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-message.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-message.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-param-test.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-param-test.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-param-test.h.pump" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-param-test.h.pump" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-printers.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-printers.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-spi.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-spi.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-test-part.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-test-part.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-typed-test.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest-typed-test.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest_pred_impl.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest_pred_impl.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest_prod.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/gtest_prod.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/custom/gtest-port.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/custom/gtest-port.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/custom/gtest-printers.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/custom/gtest-printers.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/custom/gtest.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/custom/gtest.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-death-test-internal.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-death-test-internal.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-filepath.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-filepath.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-internal.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-internal.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-linked_ptr.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-linked_ptr.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-param-util-generated.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-param-util-generated.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-param-util-generated.h.pump" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-param-util-generated.h.pump" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-param-util.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-param-util.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-port-arch.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-port-arch.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-port.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-port.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-string.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-string.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-tuple.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-tuple.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-tuple.h.pump" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-tuple.h.pump" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-type-util.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-type-util.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-type-util.h.pump" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/include/gtest/internal/gtest-type-util.h.pump" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/m4/acx_pthread.m4" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/m4/acx_pthread.m4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/m4/gtest.m4" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/m4/gtest.m4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/make/Makefile" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/make/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/prime_tables.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/prime_tables.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample1.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample1.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample1.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample1.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample10_unittest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample10_unittest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample1_unittest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample1_unittest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample2.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample2.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample2.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample2.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample2_unittest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample2_unittest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample3-inl.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample3-inl.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample3_unittest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample3_unittest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample4.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample4.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample4.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample4.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample4_unittest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample4_unittest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample5_unittest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample5_unittest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample6_unittest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample6_unittest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample7_unittest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample7_unittest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample8_unittest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample8_unittest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample9_unittest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/samples/sample9_unittest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/common.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/common.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/fuse_gtest_files.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/fuse_gtest_files.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/gen_gtest_pred_impl.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/gen_gtest_pred_impl.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/gtest-config.in" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/gtest-config.in" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/pump.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/pump.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/release_docs.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/release_docs.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/test/Makefile" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/test/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/upload.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/upload.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/upload_gtest.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/scripts/upload_gtest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-all.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-all.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-death-test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-death-test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-filepath.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-filepath.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-internal-inl.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-internal-inl.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-port.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-port.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-printers.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-printers.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-test-part.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-test-part.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-typed-test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest-typed-test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest_main.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/src/gtest_main.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-death-test_ex_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-death-test_ex_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-death-test_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-death-test_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-filepath_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-filepath_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-linked_ptr_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-linked_ptr_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-listener_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-listener_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-message_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-message_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-options_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-options_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-param-test2_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-param-test2_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-param-test_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-param-test_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-param-test_test.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-param-test_test.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-port_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-port_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-printers_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-printers_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-test-part_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-test-part_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-tuple_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-tuple_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-typed-test2_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-typed-test2_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-typed-test_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-typed-test_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-typed-test_test.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-typed-test_test.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-unittest-api_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest-unittest-api_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_all_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_all_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_break_on_failure_unittest.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_break_on_failure_unittest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_break_on_failure_unittest_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_break_on_failure_unittest_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_catch_exceptions_test.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_catch_exceptions_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_catch_exceptions_test_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_catch_exceptions_test_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_color_test.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_color_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_color_test_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_color_test_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_env_var_test.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_env_var_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_env_var_test_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_env_var_test_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_environment_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_environment_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_filter_unittest.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_filter_unittest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_filter_unittest_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_filter_unittest_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_help_test.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_help_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_help_test_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_help_test_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_list_tests_unittest.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_list_tests_unittest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_list_tests_unittest_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_list_tests_unittest_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_main_unittest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_main_unittest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_no_test_unittest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_no_test_unittest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_output_test.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_output_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_output_test_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_output_test_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_output_test_golden_lin.txt" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_output_test_golden_lin.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_pred_impl_unittest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_pred_impl_unittest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_premature_exit_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_premature_exit_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_prod_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_prod_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_repeat_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_repeat_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_shuffle_test.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_shuffle_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_shuffle_test_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_shuffle_test_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_sole_header_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_sole_header_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_stress_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_stress_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_test_utils.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_test_utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_throw_on_failure_ex_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_throw_on_failure_ex_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_throw_on_failure_test.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_throw_on_failure_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_throw_on_failure_test_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_throw_on_failure_test_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_uninitialized_test.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_uninitialized_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_uninitialized_test_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_uninitialized_test_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_unittest.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_unittest.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_xml_outfile1_test_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_xml_outfile1_test_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_xml_outfile2_test_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_xml_outfile2_test_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_xml_outfiles_test.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_xml_outfiles_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_xml_output_unittest.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_xml_output_unittest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_xml_output_unittest_.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_xml_output_unittest_.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_xml_test_utils.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/gtest_xml_test_utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/production.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/production.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/production.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/test/production.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Config/DebugProject.xcconfig" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Config/DebugProject.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Config/FrameworkTarget.xcconfig" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Config/FrameworkTarget.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Config/General.xcconfig" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Config/General.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Config/ReleaseProject.xcconfig" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Config/ReleaseProject.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Config/StaticLibraryTarget.xcconfig" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Config/StaticLibraryTarget.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Config/TestTarget.xcconfig" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Config/TestTarget.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Resources/Info.plist" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Resources/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Samples/FrameworkSample/Info.plist" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Samples/FrameworkSample/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Samples/FrameworkSample/WidgetFramework.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Samples/FrameworkSample/WidgetFramework.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Samples/FrameworkSample/runtests.sh" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Samples/FrameworkSample/runtests.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Samples/FrameworkSample/widget.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Samples/FrameworkSample/widget.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Samples/FrameworkSample/widget.h" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Samples/FrameworkSample/widget.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Samples/FrameworkSample/widget_test.cc" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Samples/FrameworkSample/widget_test.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Scripts/runtests.sh" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Scripts/runtests.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Scripts/versiongenerate.py" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/Scripts/versiongenerate.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/gtest.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/googletest/xcode/gtest.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/gtest-1.8.0/travis.sh" afterPath="$PROJECT_DIR$/test/gtest-1.8.0/travis.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.cpp" afterPath="$PROJECT_DIR$/test/test.cpp" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="decipher.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/decipher.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="decipher.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/decipher.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="81" />
+    <option name="y" value="-5" />
+    <option name="width" value="1759" />
+    <option name="height" value="1005" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cipher" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="cpp-1st-tw-cipher-dojo-reference" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cipher" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="cpp-1st-tw-cipher-dojo-reference" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.cipher">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+    </configuration>
+    <configuration name="cipher" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cipher" TARGET_NAME="cipher" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cipher" RUN_TARGET_NAME="cipher">
+      <envs />
+    </configuration>
+    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cipher" TARGET_NAME="gmock" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cipher" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cipher" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cipher" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="runUnitTests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cipher" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cipher" RUN_TARGET_NAME="runUnitTests" TEST_MODE="SUITE_TEST">
+      <envs />
+    </configuration>
+    <list size="7">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.cipher" />
+      <item index="2" class="java.lang.String" itemvalue="Google Test.runUnitTests" />
+      <item index="3" class="java.lang.String" itemvalue="Application.gmock" />
+      <item index="4" class="java.lang.String" itemvalue="Application.gmock_main" />
+      <item index="5" class="java.lang.String" itemvalue="Application.gtest" />
+      <item index="6" class="java.lang.String" itemvalue="Application.gtest_main" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="937ca3d1-757c-492c-99b9-84f80b318cc9" name="Default" comment="" />
+      <created>1506498642625</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1506498642625</updated>
+      <workItem from="1506498643862" duration="139000" />
+      <workItem from="1506500452464" duration="986000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1125000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="80" y="-5" width="1761" height="1006" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24957362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24957362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/decipher.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decipher.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decipher.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decipher.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
