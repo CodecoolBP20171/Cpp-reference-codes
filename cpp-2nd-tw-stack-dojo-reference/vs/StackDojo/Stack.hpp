@@ -56,7 +56,6 @@ void Stack::push(const int data)
 inline
 int Stack::pop()
 {
-    int result = 0;
     if (stackPointer > stack) {
         return *--stackPointer;
     }
