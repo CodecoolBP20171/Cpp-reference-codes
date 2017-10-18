@@ -130,7 +130,7 @@ string Game::getInputFromUser()
     getline(cin, input);
     // every command starts with a Capital letter followed by lowercase letters
     transform(input.begin(), input.begin() + 1, input.begin(), ::toupper);
-    transform(input.begin() + 1, input.begin() + 1, input.begin(), ::tolower);
+    transform(input.begin() + 1, input.end(), input.begin() + 1, ::tolower);
     return input;
 }
 
@@ -190,8 +190,8 @@ Action Game::inputToAction(const string &input)
     {
         action = Action::HELP;
     }
-    if(ActionStr::ListItems.end() != std::find(ActionStr::ListItems.begin(),
-                                               ActionStr::ListItems.end(), input))
+    else if(ActionStr::ListItems.end() != std::find(ActionStr::ListItems.begin(),
+                                                    ActionStr::ListItems.end(), input))
     {
         action = Action::LIST_ITEMS;
     }
