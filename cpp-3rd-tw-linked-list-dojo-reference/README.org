@@ -1,0 +1,450 @@
+#+TITLE: Linked List reference
+#+OPTIONS: toc:nil num:nil
+
+* Preface
+This reference code is written as a [[https://en.wikipedia.org/wiki/Literate_Program][literate program]] as an experiment.
+This one document will contain everything needed to recreate the whole program.
+Multiple variations will be implemented.
+Code blocks will indicate which file they are part of.
+Words between ~<<~ and ~>>~ are placeholders for later code.
+* The build system
+We'll use [[https://cmake.org/cmake/help/v3.7/][CMake 3.7]] to generate our [[https://www.gnu.org/software/make/manual/html_node/Makefiles.html][makefiles]].
+
+*=CMakeLists.txt==*
+#+BEGIN_SRC sh :tangle CMakeLists.txt :padline no
+  cmake_minimum_required(VERSION 3.7)
+#+END_SRC
+The C++ '11 standard will be used to compile the source files.
+
+*=CMakeLists.txt+==*
+#+BEGIN_SRC sh :tangle CMakeLists.txt
+  set(CMAKE_CXX_STANDARD 11)
+#+END_SRC
+Set up a variable for our sources.
+
+*=CMakeLists.txt+==*
+#+BEGIN_SRC sh :tangle CMakeLists.txt :noweb tangle
+  set(SOURCES
+      <<cmake_sources>>
+     )
+#+END_SRC
+* Nodes
+Implementing linked list of any data type would require either
+- templates (advanced topic)
+- casting ~void~ pointers (ugly)
+So rather let's use a fixed node type.
+
+*=node.h==*
+#+BEGIN_SRC c++ :tangle node.h
+  #pragma once
+
+  struct Node {
+    // managed by lists.
+    Node *prev = nullptr, *next = nullptr;
+    unsigned id = 0;
+  };
+#+END_SRC
+* Interface
+The interface exposed by all linked lists will be stored in a header file.
+
+*=linked_list.h==*
+#+BEGIN_SRC c++ :tangle linked_list.h :padline no :noweb tangle
+  #pragma once
+
+  <<linked_list_h_includes>>
+
+  // forward declare a node
+  class Node;
+
+  class LinkedList {
+#+END_SRC
+Keep a pointer for the first and last element of a list.
+
+*=linked_list.h+==*
+#+BEGIN_SRC c++ :tangle linked_list.h
+  protected:
+    Node *headp = nullptr;
+    Node *lastp = nullptr;
+#+END_SRC
+Define the public methods of linked lists.
+These are all accessors which can be common for all implementations.
+~tail~ and ~length~ are made virtual, as they might need to be specialized.
+
+*=<<linked_list_h_includes>>==*
+#+BEGIN_SRC c++ :noweb-ref linked_list_h_includes
+  #include <cstddef> // for std::size_t
+#+END_SRC
+*=linked_list.h+==*
+#+BEGIN_SRC c++ :tangle linked_list.h
+  public:
+    Node *head() const;
+    Node *last() const;
+    virtual Node *tail() const;
+    virtual std::size_t length() const;
+#+END_SRC
+~head~ and ~last~ just simply return their respective pointer.
+
+*=linked_list.cc==*
+#+BEGIN_SRC c++ :tangle linked_list.cc :padline no
+  #include "linked_list.h"
+
+  Node *LinkedList::head() const {
+    return headp;
+  }
+
+  Node *LinkedList::last() const {
+    return lastp;
+  }
+#+END_SRC
+~tail~ generally just returns ~headp->next~.
+
+*=linked_list.cc+==*
+#+BEGIN_SRC c++ :tangle linked_list.cc
+  #include "node.h"
+
+  Node *LinkedList::tail() const {
+    if (headp)
+      return headp->next;
+    return nullptr;
+  }
+#+END_SRC
+~length~ just walks the list until it gets to a ~nullptr~.
+
+*=linked_list.cc+==*
+#+BEGIN_SRC c++ :tangle linked_list.cc
+  std::size_t LinkedList::length() const {
+    std::size_t size = 0;
+    if (headp)
+      for (auto n = headp; n; n = n->next) {
+        size++;
+      }
+    return size;
+  }
+#+END_SRC
+Insertion and removal will be different for every implementation,
+so they are left unimplemented.
+
+*=linked_list.h+==*
+#+BEGIN_SRC c++ :tangle linked_list.h
+  virtual void insertAfter(Node *const, Node &) = 0;
+  virtual void unlink(Node *const) = 0;
+#+END_SRC
+Sharing parts of linked lists could lead to confusion as modification
+of the copy would also modify the original.  So let's remove the
+possibility.[fn:1]
+
+*=linked_list.h+==*
+#+BEGIN_SRC c++ :tangle linked_list.h
+  LinkedList(LinkedList &) = delete;
+  LinkedList(LinkedList &&) = delete;
+  LinkedList &operator=(LinkedList &) = delete;
+  LinkedList &operator=(LinkedList &&) = delete;
+#+END_SRC
+At last add a default constructor and a virtual destructor.
+
+*=linked_list.h+==*
+#+BEGIN_SRC c++ :tangle linked_list.h
+    LinkedList() = default;
+    virtual ~LinkedList() {}
+  };
+#+END_SRC
+
+* Compile
+Now that we have code, let's compile it.
+
+Add the file to the sources.
+
+*=<<cmake_sources>>+==*
+#+BEGIN_SRC sh :noweb-ref cmake_sources
+  linked_list.cc
+#+END_SRC
+Create a target as a static library.
+
+*=CMakeLists.txt+==*
+#+BEGIN_SRC sh :tangle CMakeLists.txt
+  add_library(linked_list STATIC ${SOURCES})
+#+END_SRC
+Make a build directory and enter it.
+#+BEGIN_SRC sh
+  mkdir Debug
+  cd Debug
+#+END_SRC
+Generate makefiles for a debug build.
+#+BEGIN_SRC sh
+  cmake -DCMAKE_BUILD_TYPE=Debug ..
+#+END_SRC
+And build the library.
+#+BEGIN_SRC sh
+  make
+#+END_SRC
+* Singly Linked List
+Let's create a new header file for a singly linked list.
+The class will extend the ~LinkedList~ class.
+
+The already implemented virtual functions will be left as is.
+The pure virtual functions shall be implemented.
+
+*=single.h==*
+#+BEGIN_SRC c++ :tangle single.h :padline no
+  #pragma once
+
+  #include "linked_list.h"
+
+  class SinglyLinkedList : public LinkedList {
+    void insertAfter(Node *const, Node &) override;
+    void unlink(Node *const) override;
+  };
+#+END_SRC
+
+~insertAfter~ first checks whether we have an empty list and ~where~ is a null pointer.
+If it is then inserts ~node~ as the sole node.
+
+*=single.cc==*
+#+BEGIN_SRC c++ :tangle single.cc :padline no
+  #include <cassert>
+
+  #include "single.h"
+  #include "node.h"
+
+  void SinglyLinkedList::insertAfter(Node * const where, Node &node) {
+    if(!headp && !where){
+      assert(!lastp);
+      headp = &node;
+      lastp = &node;
+      node.next = nullptr;
+      return;
+    }
+#+END_SRC
+Otherwise transfers the next pointer of ~where~ to the inserted node
+and sets it to the new node.
+
+If there is next node then move ~last~.
+
+*=single.cc+==*
+#+BEGIN_SRC c++ :tangle single.cc
+  for (auto n = headp; n; n = n->next)
+    if (n == where) {
+      node.next = where->next;
+      where->next = &node;
+      if (!node.next)
+        lastp = &node;
+      return;
+    }
+#+END_SRC
+If the control gets here then ~where~ was not in the list.
+
+*=single.cc+==*
+#+BEGIN_SRC c++ :tangle single.cc
+    assert(!"Tried to insert after a node not in the list");
+    return;
+  }
+#+END_SRC
+Unlinking a node is just resetting the pointers.
+The node is not freed.
+
+The whole list has to be walked to find the previous node.
+
+*=single.cc+==*
+#+BEGIN_SRC c++ :tangle single.cc
+  void SinglyLinkedList::unlink(Node *const where) {
+    if (where)
+      for (auto n = headp; n; n = n->next)
+        if (n->next == where) {
+          n->next = where->next;
+          where->next = nullptr;
+          return;
+        }
+    assert(!"Node was not in the list");
+    return;
+  }
+#+END_SRC
+
+Add the file to the sources.
+
+*=<<cmake_sources>>+==*
+#+BEGIN_SRC sh :noweb-ref cmake_sources
+  single.cc
+#+END_SRC
+* Testing
+Now that we can run some code, we can write some tests.
+
+Let's add test files to cmake.
+
+*=CMakeLists.txt+==*
+#+BEGIN_SRC sh :tangle CMakeLists.txt :noweb tangle
+  set(TEST_SOURCES
+      <<cmake_test_sources>>
+     )
+#+END_SRC
+And set up testing.
+
+We'll use [[https://github.com/google/googletest][gtest]] to run our tests.
+It is assumed that gtest is fetched and built somewhere on the system
+and its location is exported as =GTEST_ROOT=.
+
+Enable testing.
+
+*=CMakeLists.txt+==*
+#+BEGIN_SRC sh :tangle CMakeLists.txt
+  enable_testing()
+#+END_SRC
+Set up gtest.
+
+*=CMakeLists.txt+==*
+#+BEGIN_SRC sh :tangle CMakeLists.txt
+  find_package(GTest REQUIRED)
+#+END_SRC
+Add a test executable.
+We'll use the builtin ~main~ function.
+
+*=CMakeLists.txt+==*
+#+BEGIN_SRC sh :tangle CMakeLists.txt
+  add_executable(tests ${TEST_SOURCES})
+  target_link_libraries(tests linked_list GTest::GTest GTest::Main)
+#+END_SRC
+Add it as a test suite.
+
+*=CMakeLists.txt+==*
+#+BEGIN_SRC sh :tangle CMakeLists.txt
+  add_test(AllTests tests)
+#+END_SRC
+Use a fixture to allocate 10 nodes before every test
+and to deallocate them after every test.
+
+*=list_tests.cc==*
+#+BEGIN_SRC c++ :tangle list_tests.cc :padline no :noweb tangle
+  #include <gtest/gtest.h>
+
+  #include "node.h"
+  #include "single.h"
+
+  class ListTest : public ::testing::Test {
+  public:
+    Node *nodes = nullptr;
+    constexpr static std::size_t nodenum = 10;
+
+    void SetUp() {
+      nodes = new Node[nodenum];
+      for (std::size_t i = 0; i < nodenum; i++)
+        nodes[i].id = i;
+    }
+
+    void TearDown() { delete[] nodes; }
+    <<fixture_methods>>
+  };
+#+END_SRC
+Add the test file to the test sources.
+
+*=<<cmake_test_sources>>==*
+#+BEGIN_SRC sh :noweb-ref cmake_test_sources
+  list_tests.cc
+#+END_SRC
+Add a test case for empty lists.
+
+- They shall have a length of 0
+- Head and last have to be null pointers.
+- Tail shall also return a nullptr.
+
+*=<<fixture_methods>>==*
+#+BEGIN_SRC c++ :noweb-ref fixture_methods
+  void empty(LinkedList &l) {
+    EXPECT_EQ(l.length(), 0);
+    EXPECT_EQ(l.head(), l.last());
+    EXPECT_EQ(l.head(), nullptr);
+    EXPECT_EQ(l.tail(), nullptr);
+  }
+#+END_SRC
+Test it with a singly linked list.
+
+*=list_tests.cc+==*
+#+BEGIN_SRC c++ :tangle list_tests.cc
+  TEST_F(ListTest, SingleEmpty) {
+    SinglyLinkedList l;
+    empty(l);
+  }
+#+END_SRC
+Add a method for inserting one node.
+
+- Length shall be 1.
+- Head and last shall point to the same node.
+- Tail shall return a null pointer.
+
+*=<<fixture_methods>>+==*
+#+BEGIN_SRC c++ :noweb-ref fixture_methods
+  void addOne(LinkedList &l) {
+    l.insertAfter(l.head(), nodes[0]);
+    EXPECT_EQ(l.length(), 1);
+    EXPECT_EQ(l.head(), l.last());
+    EXPECT_NE(l.head(), nullptr);
+    EXPECT_EQ(l.tail(), nullptr);
+  }
+#+END_SRC
+Add a test case for a singly linked list.
+
+*=list_tests.cc+==*
+#+BEGIN_SRC c++ :tangle list_tests.cc
+  TEST_F(ListTest, SingleAddOne) {
+    SinglyLinkedList l;
+    addOne(l);
+  }
+#+END_SRC
+Add a case for inserting two nodes.
+
+- Length shall be 2.
+- Head and last shall point to different nodes.
+- Tail shall return the address of last.
+
+*=<<fixture_methods>>+==*
+#+BEGIN_SRC c++ :noweb-ref fixture_methods
+  void addTwo(LinkedList &l) {
+    l.insertAfter(l.head(), nodes[0]);
+    l.insertAfter(l.head(), nodes[1]);
+    EXPECT_EQ(l.length(), 2);
+    EXPECT_NE(l.head(), l.last());
+    EXPECT_NE(l.head(), nullptr);
+    EXPECT_NE(l.last(), nullptr);
+    EXPECT_EQ(l.tail(), l.last());
+  }
+#+END_SRC
+Test it with a singly linked list.
+
+*=list_tests.cc+==*
+#+BEGIN_SRC c++ :tangle list_tests.cc
+  TEST_F(ListTest, SingleAddTwo) {
+    SinglyLinkedList l;
+    addTwo(l);
+  }
+#+END_SRC
+Write a test for unlinking.
+
+- Add three nodes.
+- Remove the second one.
+- Length shall be 2
+- Tail and last shall point to the same node.
+
+*=<<fixture_methods>>+==*
+#+BEGIN_SRC c++ :noweb-ref fixture_methods
+  void unlink(LinkedList &l) {
+    l.insertAfter(l.head(), nodes[0]);
+    l.insertAfter(l.head(), nodes[1]);
+    l.insertAfter(l.head(), nodes[2]);
+    l.unlink(l.tail());
+    EXPECT_EQ(l.length(), 2);
+    EXPECT_NE(l.head(), l.last());
+    EXPECT_NE(l.head(), nullptr);
+    EXPECT_NE(l.last(), nullptr);
+    EXPECT_EQ(l.tail(), l.last());
+  }
+#+END_SRC
+Test it with a singly linked list.
+
+*=list_tests.cc+==*
+#+BEGIN_SRC c++ :tangle list_tests.cc
+  TEST_F(ListTest, SingleUnlink) {
+    SinglyLinkedList l;
+    unlink(l);
+  }
+#+END_SRC
+* Footnotes
+
+[fn:1] Deep copy can be implemented but that is out of scope of this reference.
